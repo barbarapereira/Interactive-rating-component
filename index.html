@@ -11,15 +11,17 @@
 
 </head>
 <body>
-  <div class="container">
-    <div class="error hide">
+  <main class="container">
+    <section class="error hide">
       <p>please, select a number</p>
-    </div>
-    <div class="card card--main">
+    </section>
+    <section class="card card--main">
       <div class="card__icon">
-        <img src="./images/icon-star.svg" alt="">
+        <img src="./images/icon-star.svg" alt="icon star">
       </div>
-      <h1 class="card__title">How did we do?</h1>
+      <header>
+        <h1 class="card__title">How did we do?</h1>
+      </header>
       <p class="card__text">Pleaase let us know how we did with support request. All feedbacks is appreciated to help us improve our offering</p>
       <div class="card__rating">
         <div class="card__rating-number" onclick="selectRating(1)"><span>1</span></div>
@@ -29,14 +31,16 @@
         <div class="card__rating-number" onclick="selectRating(5)"><span>5</span></div>
       </div>
       <button class="card__btn" onclick="submmit()">Submmit</button>
-    </div>
+    </section>
 
     <div class="card card--secondary hide">
       <img class="card__img" src="./images/illustration-thank-you.svg" alt="thank you">
       <div class="card__result">
         <p class="card__result--text">You selected <span class="card__result-value"></span> out of 5</p>
       </div>
-      <h2 class="card__title">Thank you!</h2>
+      <header>
+        <h1 class="card__title">Thank you!</h1>
+      </header>
       <p class="card__text">We appreciate you taking the time to give a rating. If your ever neew more support, don't hesitate to get in touch!</p>       
     </div>
     
@@ -44,7 +48,7 @@
       <p>Challenge by &nbsp;<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor &nbsp;</a></p> 
       <p>Coded by <a href="https://www.frontendmentor.io/profile/barbarapereira">&nbsp;Bárbara Pereira</a></p>
     </div>
-  </div>
+  </main>
   <script src="app.js"></script>
 </body>
 </html>
