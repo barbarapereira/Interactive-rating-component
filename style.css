@@ -28,6 +28,21 @@ body{
     height: 100vh;
     padding: 24px;
 }
+
+.error{
+    width: 280px;
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 35px 0 10px 0;
+    text-align: center;
+    animation: showError 1.5s infinite;
+}
+@keyframes showError {
+    from { display: block; opacity: 0; }
+    to { opacity: 1; }
+}
 .card{
     background: var(--black-gradient);
     padding: 24px;
@@ -52,7 +67,10 @@ body{
 
 .card__text{
     color: var(--light-gray);
-    margin-bottom: 24px;
+}
+
+.card--main .card__text{
+    margin-bottom: 24px;    
 }
 
 .card__rating{
