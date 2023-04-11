@@ -52,6 +52,7 @@ body{
 
 .card__text{
     color: var(--light-gray);
+    margin-bottom: 24px;
 }
 
 .card__rating{
@@ -61,7 +62,7 @@ body{
     justify-content: space-between;
 }
 
-.card__rating__number{
+.card__rating-number{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,16 +74,16 @@ body{
     transition: linear .6s;
 }
 
-.card__rating__number--active{ 
+.card__rating-number--active{ 
     background-color: var(--medium-gray); 
     color: var(--white);
 }
 
-.card__rating__number:hover, button{
+.card__rating-number:hover, button{
     cursor: pointer;
 }
 
-.card__rating__number:hover{ 
+.card__rating-number:hover{ 
     background-color: var(--orange); 
     color: var(--white);
 }
@@ -146,6 +147,7 @@ body{
     width: 168px;
     height: 32px;
     margin:  auto auto 24px auto; 
+    padding-top: 4pxf;
 }
 
 
@@ -170,7 +172,7 @@ body{
         width: 48px;
         height: 48px;
     }
-    .card__rating__number{
+    .card__rating-number{
         width: 51px;
         height: 51px;
         font-size: 16px;
